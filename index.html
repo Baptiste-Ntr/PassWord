@@ -7,5 +7,124 @@
     <title>PassWord</title>
     <link rel="stylesheet" href="CSS/index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="header">
+      <div class="title">
+        <h1>PassWord</h1>
+      </div>
+      <div class="colormode">
+        <ion-icon name="moon"></ion-icon>
+      </div>
+    </div>
+    <div class="passwordgeneration">
+      <div class="passwordgenerated">
+        <input type="text" name="" id="" readonly />
+      </div>
+      <div class="generation">
+        <div class="buttongeneration">
+          <button>Generate</button>
+        </div>
+        <div class="generationsettings">
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                checked="checked"
+                name=""
+                id="settingscharacters"
+              />
+              <label for="settingscharacters">More than 8 characters</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                checked="checked"
+                name=""
+                id="settingsupper-case"
+              />
+              <label for="settingsupper-case">Upper-case</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                checked="checked"
+                name=""
+                id="settingslower-case"
+              />
+              <label for="settingslower-case">Lower-case</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                checked="checked"
+                name=""
+                id="settingsnumbers"
+              />
+              <label for="settingsnumbers">Numbers</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="separation"></div>
+
+    <div class="passwordverification">
+      <div class="passwordinput">
+        <input type="text" name="" id="" />
+      </div>
+      <div class="verification">
+        <ul>
+          <li>
+            <input
+              type="checkbox"
+              checked="checked"
+              name=""
+              id="settingscharacters-verification"
+            />
+            <label for="settingscharacters-verification"
+              >More than 8 characters</label
+            >
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              checked="checked"
+              name=""
+              id="settingsupper-case-verification"
+            />
+            <label for="settingsupper-case-verification">Upper-case</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              checked="checked"
+              name=""
+              id="settingslower-case-verification"
+            />
+            <label for="settingslower-case-verification">Lower-case</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              checked="checked"
+              name=""
+              id="settingsnumbers-verification"
+            />
+            <label for="settingsnumbers-verification">Numbers</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- script pour ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

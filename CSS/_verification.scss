@@ -1,0 +1,68 @@
+.passwordverification {
+    display: flex;
+    position: absolute;
+    width: 40%;
+    height: 60vh;
+    top: 27vh;
+    margin-left: 55%;
+    flex-direction: column;
+    // background: #000;
+    font-family: $fontPoppins;
+
+    user-select: none;
+
+
+    .passwordinput {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        align-items: center;
+        margin-top: 5%;
+
+        input {
+            height: 8vh;
+            width: 600px;
+            border: 4px solid #333333;
+            border-radius: 15px;
+            border-color: $gris;
+            background-color: $vert;
+            padding: 30px;
+        }
+    }
+
+    .verification {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 70%;
+        background: $vert;
+
+        .verification {
+            display: flex;
+            margin-top: 8vh;
+            margin-left: 10%;
+            background: blue;
+            height: 20vh;
+            width: 300px;
+            border: 4px solid #333333;
+            border-radius: 5px;
+            background-color: $vert;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                margin-left: 20px;
+                width: 100%;
+                list-style-type: none;
+                color: $gris;
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

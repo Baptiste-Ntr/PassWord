@@ -1,1 +1,196 @@
-@import url(./style.css);/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@300&display=swap");
+.header {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .title {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  margin-left: 100px;
+  font-weight: 600;
+  font-size: 50px;
+}
+.header .colormode {
+  color: #333;
+  font-size: 40px;
+  margin-right: 70px;
+  cursor: pointer;
+}
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #78E08F;
+}
+
+.separation {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 5px;
+  background-color: #333;
+  border-radius: 30px;
+}
+
+.passwordgeneration {
+  display: flex;
+  width: 40%;
+  height: 60vh;
+  margin-top: 7vh;
+  margin-left: 5%;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.passwordgeneration .passwordgenerated {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  margin-top: 5%;
+}
+.passwordgeneration .passwordgenerated input {
+  height: 8vh;
+  width: 600px;
+  border: 4px solid #333333;
+  border-radius: 15px;
+  border-color: #333;
+  background-color: #78E08F;
+  padding: 30px;
+}
+.passwordgeneration .generation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  background: #78E08F;
+}
+.passwordgeneration .generation .buttongeneration {
+  display: flex;
+  height: 8vh;
+  width: 200px;
+  margin-top: 12vh;
+  margin-left: 15%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.passwordgeneration .generation .buttongeneration button {
+  height: 100%;
+  width: 100%;
+  border: 4px solid #333;
+  background-color: #78E08F;
+  border-radius: 37px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.passwordgeneration .generation .buttongeneration button:hover {
+  background-color: #6dc981;
+}
+.passwordgeneration .generation .buttongeneration button:active {
+  background-color: #559c65;
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.5));
+}
+.passwordgeneration .generation .generationsettings {
+  display: flex;
+  margin-top: 8vh;
+  margin-left: 10%;
+  background: blue;
+  height: 20vh;
+  width: 300px;
+  border: 4px solid #333333;
+  border-radius: 5px;
+  background-color: #78E08F;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.passwordgeneration .generation .generationsettings ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  width: 100%;
+  list-style-type: none;
+  color: #333;
+}
+.passwordgeneration .generation .generationsettings ul label {
+  margin-left: 10px;
+}
+
+.passwordverification {
+  display: flex;
+  position: absolute;
+  width: 40%;
+  height: 60vh;
+  top: 27vh;
+  margin-left: 55%;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.passwordverification .passwordinput {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  margin-top: 5%;
+}
+.passwordverification .passwordinput input {
+  height: 8vh;
+  width: 600px;
+  border: 4px solid #333333;
+  border-radius: 15px;
+  border-color: #333;
+  background-color: #78E08F;
+  padding: 30px;
+}
+.passwordverification .verification {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  background: #78E08F;
+}
+.passwordverification .verification .verification {
+  display: flex;
+  margin-top: 8vh;
+  margin-left: 10%;
+  background: blue;
+  height: 20vh;
+  width: 300px;
+  border: 4px solid #333333;
+  border-radius: 5px;
+  background-color: #78E08F;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.passwordverification .verification .verification ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 20px;
+  width: 100%;
+  list-style-type: none;
+  color: #333;
+}
+.passwordverification .verification .verification ul label {
+  margin-left: 10px;
+}/*# sourceMappingURL=index.css.map */
