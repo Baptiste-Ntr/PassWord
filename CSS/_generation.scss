@@ -27,6 +27,12 @@
             border-color: $gris;
             background-color: $vert;
             padding: 30px;
+            font-size: 40px;
+            color: $gris;
+            text-align: center;
+        }
+        input:focus {
+            outline: none;
         }
     }
     .generation {
@@ -86,6 +92,16 @@
                 color: $gris;
                 label {
                     margin-left: 10px;
+                }
+                li {
+                    input {
+                        border: none;
+                        height: 2vh;
+                        text-align: center;
+                    }
+                    input:focus {
+                        outline: none;
+                    }
                 }
             }
         }

@@ -28,7 +28,14 @@
             border-color: $gris;
             background-color: $vert;
             padding: 30px;
+            font-size: 40px;
+            color: $gris;
         }
+
+        input:focus {
+            outline: none;
+        }
+
     }
 
     .verification {
@@ -37,32 +44,29 @@
         width: 100%;
         height: 70%;
         background: $vert;
+        display: flex;
+        margin-top: 8vh;
+        margin-left: 30%;
+        height: 20vh;
+        width: 300px;
+        border: 4px solid #333333;
+        border-radius: 5px;
+        background-color: $vert;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-        .verification {
+        ul {
             display: flex;
-            margin-top: 8vh;
-            margin-left: 10%;
-            background: blue;
-            height: 20vh;
-            width: 300px;
-            border: 4px solid #333333;
-            border-radius: 5px;
-            background-color: $vert;
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 20px;
+            width: 100%;
+            list-style-type: none;
+            color: $gris;
 
-            ul {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                margin-left: 20px;
-                width: 100%;
-                list-style-type: none;
-                color: $gris;
-
-                label {
-                    margin-left: 10px;
-                }
+            label {
+                margin-left: 10px;
             }
         }
+        
     }
 }

@@ -18,22 +18,28 @@
     </div>
     <div class="passwordgeneration">
       <div class="passwordgenerated">
-        <input type="text" name="" id="" readonly />
+        <input
+          type="text"
+          name=""
+          id="password"
+          readonly
+          placeholder="Generation"
+        />
       </div>
       <div class="generation">
         <div class="buttongeneration">
-          <button>Generate</button>
+          <button onclick="Password()">Generate</button>
         </div>
         <div class="generationsettings">
           <ul>
             <li>
               <input
-                type="checkbox"
-                checked="checked"
+                type="number"
                 name=""
-                id="settingscharacters"
+                id="settingslength"
+                placeholder="Length"
+                max="10"
               />
-              <label for="settingscharacters">More than 8 characters</label>
             </li>
             <li>
               <input
@@ -66,19 +72,24 @@
         </div>
       </div>
     </div>
-    
+
     <div class="separation"></div>
 
     <div class="passwordverification">
       <div class="passwordinput">
-        <input type="text" name="" id="" />
+        <input
+          type="text"
+          name=""
+          id="verificationtxt"
+          placeholder="Verification"
+          onkeypress="Verification()"
+        />
       </div>
       <div class="verification">
         <ul>
           <li>
             <input
               type="checkbox"
-              checked="checked"
               name=""
               id="settingscharacters-verification"
             />
@@ -89,7 +100,6 @@
           <li>
             <input
               type="checkbox"
-              checked="checked"
               name=""
               id="settingsupper-case-verification"
             />
@@ -98,19 +108,13 @@
           <li>
             <input
               type="checkbox"
-              checked="checked"
               name=""
               id="settingslower-case-verification"
             />
             <label for="settingslower-case-verification">Lower-case</label>
           </li>
           <li>
-            <input
-              type="checkbox"
-              checked="checked"
-              name=""
-              id="settingsnumbers-verification"
-            />
+            <input type="checkbox" name="" id="settingsnumbers-verification" />
             <label for="settingsnumbers-verification">Numbers</label>
           </li>
         </ul>
@@ -126,5 +130,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./JS/generation.js"></script>
+    <script src="./JS/verification.js"></script>
   </body>
 </html>

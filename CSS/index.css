@@ -73,6 +73,12 @@ body {
   border-color: #333;
   background-color: #78E08F;
   padding: 30px;
+  font-size: 40px;
+  color: #333;
+  text-align: center;
+}
+.passwordgeneration .passwordgenerated input:focus {
+  outline: none;
 }
 .passwordgeneration .generation {
   display: flex;
@@ -131,6 +137,14 @@ body {
 .passwordgeneration .generation .generationsettings ul label {
   margin-left: 10px;
 }
+.passwordgeneration .generation .generationsettings ul li input {
+  border: none;
+  height: 2vh;
+  text-align: center;
+}
+.passwordgeneration .generation .generationsettings ul li input:focus {
+  outline: none;
+}
 
 .passwordverification {
   display: flex;
@@ -162,6 +176,11 @@ body {
   border-color: #333;
   background-color: #78E08F;
   padding: 30px;
+  font-size: 40px;
+  color: #333;
+}
+.passwordverification .passwordinput input:focus {
+  outline: none;
 }
 .passwordverification .verification {
   display: flex;
@@ -169,12 +188,9 @@ body {
   width: 100%;
   height: 70%;
   background: #78E08F;
-}
-.passwordverification .verification .verification {
   display: flex;
   margin-top: 8vh;
-  margin-left: 10%;
-  background: blue;
+  margin-left: 30%;
   height: 20vh;
   width: 300px;
   border: 4px solid #333333;
@@ -182,7 +198,7 @@ body {
   background-color: #78E08F;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.passwordverification .verification .verification ul {
+.passwordverification .verification ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -191,6 +207,6 @@ body {
   list-style-type: none;
   color: #333;
 }
-.passwordverification .verification .verification ul label {
+.passwordverification .verification ul label {
   margin-left: 10px;
 }/*# sourceMappingURL=index.css.map */
