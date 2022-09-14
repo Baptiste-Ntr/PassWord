@@ -1,3 +1,9 @@
+var Checklong = document.getElementById("settingslength");
+
+window.addEventListener("load", function () {
+  Checklong.value = 10;
+});
+
 function Verifysettings() {
   var CheckUpper = document.getElementById("settingsupper-case");
   var CheckLower = document.getElementById("settingslower-case");

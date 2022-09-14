@@ -137,13 +137,29 @@ body {
 .passwordgeneration .generation .generationsettings ul label {
   margin-left: 10px;
 }
-.passwordgeneration .generation .generationsettings ul li input {
+.passwordgeneration .generation .generationsettings ul li input[type=checkbox] {
   border: none;
-  height: 2vh;
-  text-align: center;
 }
-.passwordgeneration .generation .generationsettings ul li input:focus {
+.passwordgeneration .generation .generationsettings ul li input[type=checkbox]:focus {
   outline: none;
+}
+.passwordgeneration .generation .generationsettings ul li .range {
+  width: 80%;
+  margin-left: 5%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.passwordgeneration .generation .generationsettings ul li .range:hover {
+  opacity: 1;
+}
+.passwordgeneration .generation .generationsettings ul li .range::-webkit-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
 }
 
 .passwordverification {

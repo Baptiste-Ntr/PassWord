@@ -34,11 +34,14 @@
           <ul>
             <li>
               <input
-                type="number"
+                type="range"
                 name=""
                 id="settingslength"
                 placeholder="Length"
-                max="10"
+                max="20"
+                min="1"
+                value="10"
+                class="range"
               />
             </li>
             <li>
@@ -82,7 +85,7 @@
           name=""
           id="verificationtxt"
           placeholder="Verification"
-          onkeypress="Verification()"
+          onkeyup="Verification()"
         />
       </div>
       <div class="verification">
@@ -98,20 +101,12 @@
             >
           </li>
           <li>
-            <input
-              type="checkbox"
-              name=""
-              id="settingsupper-case-verification"
-            />
-            <label for="settingsupper-case-verification">Upper-case</label>
+            <input type="checkbox" name="" id="settingsupper-verification" />
+            <label for="settingsupper-verification">Upper-case</label>
           </li>
           <li>
-            <input
-              type="checkbox"
-              name=""
-              id="settingslower-case-verification"
-            />
-            <label for="settingslower-case-verification">Lower-case</label>
+            <input type="checkbox" name="" id="settingslower-verification" />
+            <label for="settingslower-verification">Lower-case</label>
           </li>
           <li>
             <input type="checkbox" name="" id="settingsnumbers-verification" />
